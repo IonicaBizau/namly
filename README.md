@@ -14,6 +14,21 @@ $ npm i -g namly
 
 Then, run `namly --help` and see what the CLI tool can do.
 
+```sh
+$ namly --help
+Usage: namly [options]
+
+Options:
+  -i, --input <keyword>  The package keyword.         
+  -h, --help             Displays this help.          
+  -v, --version          Displays version information.
+
+Examples:
+  namly -i name
+
+Documentation can be found at https://github.com/IonicaBizau/namly#readme
+```
+
 ## Example
 
 Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm`:
