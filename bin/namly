@@ -1,0 +1,59 @@
+#!/usr/bin/env node
+
+// Dependencies
+const namly = require("../lib")
+    , log = require("emoji-logger")
+    , clp = require("clp")
+    , package = require("../package")
+    ;
+
+log.add(
+    "available"
+  , "whiteCheckMark"
+  , "turquoise"
+);
+
+log.add(
+    "unavailable"
+  , "noEntry"
+  , "carrot"
+);
+
+log.add(
+    "loading"
+  , "hourglassFlowingSand"
+  , "concrete"
+  , 1
+);
+
+// Parse the command line arguments
+var inputOpt = new clp.Option(["i", "input"], "The package keyword.", "keyword")
+  , parser = new clp({
+        name: "Namly"
+      , version: package.version
+      , exe: package.name
+      , examples: [
+            "namly -i name"
+        ]
+      , docs_url: package.homepage
+      , process: true
+    }, [
+        inputOpt
+    ])
+  ;
+
+inputOpt.value = (inputOpt.value || "").trim();
+if (!inputOpt.value) {
+    return log("The input keyword is mandatory.", "error");
+}
+
+log("Fetching the data... This may take a while.", "loading");
+namly(inputOpt.value, (err, data) => {
+    if (err) {
+        if (Array.isArray(err)) {
+            return err.forEach(c => c && log(c.toString(), "error"));
+        }
+        return log(err.message, "error");
+    }
+    data.forEach(c => log(c.name, c.available ? "available" : "unavailable"));
+});

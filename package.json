@@ -1,0 +1,34 @@
+{
+  "name": "namly",
+  "version": "1.0.0",
+  "description": "A tool for helping you to choose npm package names.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/namly.git"
+  },
+  "keywords": [
+    "name",
+    "generate",
+    "npm",
+    "available"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/namly/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/namly#readme",
+  "dependencies": {
+    "clp": "^3.2.0",
+    "emoji-logger": "^1.0.0",
+    "name-it": "^1.3.0",
+    "npm-available": "^1.2.1"
+  },
+  "blah": {
+    "ex_img": "http://i.imgur.com/zI93Tlz.png"
+  }
+}
