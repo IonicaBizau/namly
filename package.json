@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
+  "bin": {
+    "namly": "./bin/namly"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
