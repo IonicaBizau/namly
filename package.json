@@ -1,6 +1,6 @@
 {
   "name": "namly",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
   "bin": {
@@ -29,7 +29,6 @@
     "clp": "^3.2.0",
     "emoji-logger": "^1.0.0",
     "name-it": "^1.3.0",
-    "npm-available": "^1.2.1",
     "npm-available-array": "^1.0.0"
   },
   "blah": {
