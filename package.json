@@ -1,6 +1,6 @@
 {
   "name": "namly",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
   "bin": {
@@ -20,6 +20,9 @@
     "available"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "contributors": [
+    "Daniel Hug <daniel@hugwebdesign.com> (http://www.hugwebdesign.com/)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/namly/issues"
