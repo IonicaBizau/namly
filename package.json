@@ -1,6 +1,6 @@
 {
   "name": "namly",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
   "bin": {
@@ -36,5 +36,16 @@
   },
   "blah": {
     "ex_img": "http://i.imgur.com/zI93Tlz.png"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
