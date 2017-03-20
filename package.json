@@ -1,6 +1,6 @@
 {
   "name": "namly",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
   "bin": {
@@ -19,7 +19,7 @@
     "npm",
     "available"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "contributors": [
     "Daniel Hug <daniel@hugwebdesign.com> (http://www.hugwebdesign.com/)"
   ],
@@ -41,12 +41,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
