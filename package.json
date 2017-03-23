@@ -1,6 +1,6 @@
 {
   "name": "namly",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
   "bin": {
