@@ -8,6 +8,7 @@ and checks if they are available on the NPM registry using
 [`npm-available-array](http://github.com/IonicaBizau/npm-available-array).
 
 #### Params
+
 - **String** `name`: A keyword to use for generating names.
 - **Function** `callback`: The callback function.
 
