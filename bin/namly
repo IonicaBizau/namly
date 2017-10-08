@@ -27,12 +27,13 @@ log.add(
 );
 
 // Parse the command line arguments
-var inputOpt = new clp.Option(["i", "input"], "The package keyword.", "keyword")
-  , parser = new clp({
+var inputOpt = new clp.Option(["i", "input"], "The package keyword. \nCan be passed as single argument.", "keyword")
+  , parser = new clp(process.argv.slice(2), {
         name: "Namly"
       , version: package.version
       , exe: package.name
       , examples: [
+            "namly name",
             "namly -i name"
         ]
       , docs_url: package.homepage
@@ -42,7 +43,7 @@ var inputOpt = new clp.Option(["i", "input"], "The package keyword.", "keyword")
     ])
   ;
 
-inputOpt.value = (inputOpt.value || "").trim();
+inputOpt.value = (inputOpt.value || parser.process()._[0] || "").trim();
 if (!inputOpt.value) {
     return log("The input keyword is mandatory.", "error");
 }
