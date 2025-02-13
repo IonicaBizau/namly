@@ -1,6 +1,6 @@
 {
   "name": "namly",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "description": "A tool for helping you to choose npm package names.",
   "main": "lib/index.js",
   "bin": {
@@ -48,6 +48,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
